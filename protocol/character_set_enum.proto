@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package protocol;
+option go_package = "GMDriver/protocol";
+
+enum CharacterSet{
+ CHARACTERSET_UNKNOWN = 0;
+  BIG5            =       1;
+   DEC8             =      3 ;
+   CP850            =      4 ;
+   HP8               =     6 ;
+   KOI8R             =     7 ;
+   LATIN1            =     8 ;
+   LATIN2            =     9 ;
+   SWE7              =    10 ;
+   ASCII             =    11 ;
+   UJIS              =    12 ;
+   SJIS              =    13 ;
+   HEBREW            =    16 ;
+   TIS620            =    18 ;
+   EUCKR             =    19 ;
+   KOI8U             =    22 ;
+   GB2312            =    24 ;
+   GREEK             =    25 ;
+   CP1250            =    26 ;
+   GBK                =   28 ;
+   LATIN5             =   30 ;
+   ARMSCII8           =   32 ;
+   UTF8              =    33 ;
+   UCS2              =    35 ;
+   CP866              =   36 ;
+   KEYBCS2            =   37 ;
+   MACCE             =    38 ;
+   MACROMAN            =  39 ;
+   CP852              =   40 ;
+   LATIN7             =   41 ;
+   CP1251             =   51 ;
+   UTF16              =   54 ;
+   UTF16LE             =  56 ;
+   CP1256              =  57 ;
+   CP1257             =   59 ;
+   UTF32              =   60 ;
+   BINARY             =   63 ;
+   GEOSTD8            =   92 ;
+   CP932              =   95 ;
+   EUCJPMS             =  97 ;
+   GB18030            =  248 ;
+   UTF8MB4            =  255;
+}

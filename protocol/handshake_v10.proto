@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package protocol;
+option go_package = "mysql-protocol-demo/protocol";
+
+message HandshakeV10{
+    int32       protocol_version = 1;
+    string      server_version   = 2;
+    int32       connection_id   = 3;
+    string      auth_plugin_data_part_1 = 4;
+    int32       capability_flags_low = 5;
+    int32       character_set = 6;
+    int32       status_flags = 7;
+    int32       capability_flags_high = 8;
+    int32       auth_plugin_data_len = 9;
+    string      auth_plugin_data_part_2 = 10;
+    string      auth_plugin_name = 11;
+}
